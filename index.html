@@ -54,22 +54,24 @@
 			margin-top: 20px;
 		}
 		a {
-			margin-left: 5px;
-			color: #0096ff;
 			text-decoration: none;
-
 		}
 		a:hover {
+			text-decoration: underline;
+		}
+		a.link-join {
+			margin-left: 5px;
+			color: #0096ff;
+		}
+		a.link-join:hover {
 			border-bottom: 1px solid #fff;
 			padding-bottom: 3px;
 			color: #0096ff;
+			text-decoration: none;
 		}
 		button {
 			margin-top: 30px;
 			background-color: #0096ff !important;
-		}
-		button a {
-			color: #ffffff;
 		}
 		button a {
 			border: none !important;
@@ -77,6 +79,9 @@
 		}
 		button:hover {
 			background-color: #0242a1 !important;
+		}
+		button a:hover {
+			text-decoration: none;
 		}
 		.logo {
 			width: 300px;
@@ -96,7 +101,7 @@
 <body>
 	<div class="container header">
 		<header>
-			<img class="logo" src="logo.svg" alt="Bank of Hackistan">
+			<a href="index.html"><img class="logo" src="logo.svg" alt="Bank of Hackistan"></a>
 		</header>
 	</div>
 	<div class="container content">
@@ -109,7 +114,7 @@
 					<li>Receive your invitation to the Glance Networks - HackerOne Bug Bounty Program</li>
 					<li>Claim your agent credentials in the HackerOne Portal</li>
 					<li>Click the Cobrowse button, note the code shown</li>
-					<li>In another browser, go to <a href="https://www.glance.net/agentjoin" target="_blank">https://www.glance.net/agentjoin</a></li>
+					<li>In another browser, go to <a class="link-join" href="https://www.glance.net/agentjoin" target="_blank">https://www.glance.net/agentjoin</a></li>
 					<li>Login with your claimed credentials</li>
 					<li>Enter the code to cobrowse the site</li>
 				</ol>
